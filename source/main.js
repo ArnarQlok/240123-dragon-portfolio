@@ -17,3 +17,15 @@ import lazyLoading from './utils/lazy-loading';
 mobileNav();
 darkMode();
 lazyLoading();
+
+
+
+/**
+      * The following event is sent when the page loads. You could
+      * wrap the event in a JavaScript function so the event is
+      * sent when the user performs some action.
+      */
+      gtag('event', 'screen_view', { 'debug_mode':true }, {
+        'app_name': 'myAppName',
+        'screen_name': 'Home'
+      });
