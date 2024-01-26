@@ -29,3 +29,15 @@ lazyLoading();
         'app_name': 'myAppName',
         'screen_name': 'Home'
       });
+
+
+// Custom Event Tracking - button click
+  const myButton = document.getElementById('my-button');
+  myButton.addEventListener('click', function() {
+  
+    gtag('event', 'button_click', {
+      'event_category': 'your_category',
+      'event_label': 'your_label',
+      'value': 1
+    });
+  });
