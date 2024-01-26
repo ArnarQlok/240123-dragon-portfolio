@@ -41,3 +41,15 @@ lazyLoading();
       'value': 1
     });
   });
+
+
+  // Lägg till detta script på varje sida
+const links = document.querySelectorAll('a');
+links.forEach(function(link) {
+    link.addEventListener('click', function() {
+        gtag('event', 'page_transition', {
+            'event_category': 'Navigation',
+            'event_label': link.getAttribute('href')
+        });
+    });
+});
