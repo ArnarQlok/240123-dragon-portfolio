@@ -32,7 +32,7 @@ lazyLoading();
 
 
 // Custom Event Tracking - button click
-  const myButton = document.getElementById('my-button');
+  const myButton = document.querySelector('.header__resume');
   myButton.addEventListener('click', function() {
   
     gtag('event', 'button_click', {
