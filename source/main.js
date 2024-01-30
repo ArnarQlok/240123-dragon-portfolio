@@ -40,6 +40,7 @@ lazyLoading();
       'event_label': 'View Resume',
       'value': 1
     });
+
   });
 
 
@@ -47,9 +48,14 @@ lazyLoading();
 const links = document.querySelectorAll('a');
 links.forEach(function(link) {
     link.addEventListener('click', function() {
+
+
         gtag('event', 'page_transition', {
             'event_category': 'Navigation',
             'event_label': link.getAttribute('href')
         });
+
+
+
     });
 });
