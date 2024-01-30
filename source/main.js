@@ -36,8 +36,8 @@ lazyLoading();
   myButton.addEventListener('click', function() {
   
     gtag('event', 'button_click', {
-      'event_category': 'your_category',
-      'event_label': 'your_label',
+      'event_category': 'Header Interactions',
+      'event_label': 'View Resume',
       'value': 1
     });
   });
